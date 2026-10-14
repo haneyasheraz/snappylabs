@@ -140,6 +140,22 @@ footer button.lk{display:block;background:none;border:0;color:var(--muted);font:
 .btn.fill.gb:hover{background:rgba(111,208,255,.14);color:#fff;border-color:#9adfff;box-shadow:0 14px 36px rgba(0,0,0,.4),0 0 34px rgba(111,208,255,.35)}.btn:active{transform:translateY(-1px) scale(.99)}
 .c.glass{transition:transform .4s,border-color .4s,filter .12s linear}.c.glass:hover{transform:translateY(-4px);border-color:rgba(255,255,255,.3)}
 @media(max-width:860px){.hw,.dm,.of,.bd{grid-template-columns:1fr}.dm,.bd{padding:26px}}
+/* ===== everything centered (mobile, tablet, desktop) ===== */
+.hero,.hw{text-align:center}.hw{grid-template-columns:1fr;justify-items:center}.hl{width:100%}
+.hero .hlead{text-align:center;margin-left:auto;margin-right:auto;max-width:600px}
+.hero h1{margin-left:auto;margin-right:auto;max-width:900px}.ctas{justify-content:center}
+.log{width:100%;max-width:560px;margin:8px auto 0;text-align:left}
+.dm{grid-template-columns:1fr;text-align:center;justify-items:center}.dm h2{text-align:center}.dm .call{align-items:center}
+.of{grid-template-columns:1fr;max-width:640px;margin:0 auto}.of h2,.of .lab,.of .cp{text-align:center}
+.of .ck,.bd .ck,.sv .ck{width:max-content;max-width:100%;margin-left:auto;margin-right:auto;text-align:left}
+.bd{grid-template-columns:1fr;text-align:center;justify-items:center}
+.sv{text-align:center}.sv .pl{align-self:center}.sv .ck{align-self:center}
+.pilot{flex-direction:column;justify-content:center;text-align:center}
+.cap{flex-direction:column;align-items:center;gap:2px;text-align:center}
+footer,footer .fg{text-align:center;justify-content:center}footer button.lk{margin:4px auto;text-align:center}
+.mb p{text-align:center}
+.bd,.dm,.of,.hw{grid-template-columns:minmax(0,1fr)}
+.of .ck,.bd .ck,.sv .ck{width:fit-content;max-width:100%}
 </style>
 </head>
 <body>
@@ -159,7 +175,7 @@ footer button.lk{display:block;background:none;border:0;color:var(--muted);font:
 <div class="strip"><div class="glass"><b>24/7</b><span>Every call answered</span></div><div class="glass"><b>0</b><span>Calls sent to voicemail</span></div><div class="glass"><b>1 week</b><span>To set up your AI</span></div></div></div>
 <section id="demo"><div class="w"><div class="dm glass"><div><h2>Don't take our word for it.</h2><p>Call the number. Pretend you're a customer. Watch the AI book you in. It takes 60 seconds.</p></div><div class="call" id="demoBox"></div></div></div></section>
 <section><div class="w"><div class="pb glass"><h2 data-k="problemHead"></h2><p data-k="problemPara"></p></div></div></section>
-<section id="audit"><div class="w"><div class="of"><div class="cp"><div class="lab" style="text-align:left">Free offer</div><h2 data-k="offerHead"></h2><p data-k="offerText"></p>
+<section id="audit"><div class="w"><div class="of"><div class="cp"><div class="lab">Free offer</div><h2 data-k="offerHead"></h2><p data-k="offerText"></p>
 <ul class="ck"><li>A free homepage mockup for your business</li><li>A report on the calls nobody answers</li><li>No cost. No catch.</li></ul></div>
 <form class="fm glass" id="leadForm" novalidate>
 <label>Your name<input name="name" autocomplete="name" required></label>
@@ -203,7 +219,7 @@ footer button.lk{display:block;background:none;border:0;color:var(--muted);font:
 </div><div class="w" style="margin-top:20px">&copy; 2026 SnapyLabs. All rights reserved.</div></footer>
 <div class="md" id="md" onclick="if(event.target===this)closeM()"><div class="mb glass">
 <button class="x" onclick="closeM()">×</button>
-<h2 style="font-size:30px;text-align:left">Get a custom quote</h2>
+<h2 style="font-size:30px;text-align:center">Get a custom quote</h2>
 <p style="color:var(--muted);margin:6px 0 0">Tell us about your business. We reply within one business day.</p>
 <form id="mf"><input placeholder="Your name" required><input type="email" placeholder="Work email" required><input placeholder="Company"><select><option>Website Building</option><option>Content Marketing / Editing</option><option>AI Voice Agents</option><option>All of the above</option></select><button class="btn fill">Request my quote</button></form><div class="ok" id="ok2"></div>
 </div></div>
